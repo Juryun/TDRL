@@ -1,0 +1,10 @@
+Random Sampling
+  0%|          | 0/8 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 226, in <module>
+    im = corrupt(np.array(im), corruption_name=noise, severity=i)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\__init__.py", line 29, in corrupt
+    x_corrupted = corruption_dict[corruption_name](Image.fromarray(x), severity)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\corruptions.py", line 289, in snow
+    x = c[6] * x + (1 - c[6]) * np.maximum(x, cv2.cvtColor(x, cv2.COLOR_RGB2GRAY).reshape(224, 224, 1) * 1.5 + 0.5)
+cv2.error: C:\projects\opencv-python\opencv\modules\imgproc\src\color.cpp:11111: error: (-215) scn == 3 || scn == 4 in function cv::cvtColor
+

@@ -1,0 +1,43 @@
+2021-03-04 05:02:12,818 INFO    MainThread:23900 [wandb_setup.py:_flush():70] setting env: {}
+2021-03-04 05:02:12,819 INFO    MainThread:23900 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-03-04 05:02:12,819 INFO    MainThread:23900 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-03-04 05:02:12,819 INFO    MainThread:23900 [wandb_init.py:_log_setup():318] Logging user logs to C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210304_050212-1ufauzbd\logs\debug.log
+2021-03-04 05:02:12,819 INFO    MainThread:23900 [wandb_init.py:_log_setup():319] Logging internal logs to C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210304_050212-1ufauzbd\logs\debug-internal.log
+2021-03-04 05:02:15,005 INFO    MainThread:23900 [wandb_run.py:_console_start():1399] atexit reg
+2021-03-04 05:02:15,006 INFO    MainThread:23900 [wandb_run.py:_redirect():1262] redirect: SettingsConsole.WRAP
+2021-03-04 05:02:15,006 INFO    MainThread:23900 [wandb_run.py:_redirect():1297] Wrapping output streams.
+2021-03-04 05:02:15,007 INFO    MainThread:23900 [wandb_run.py:_redirect():1313] Redirects installed.
+2021-03-04 05:02:15,007 INFO    MainThread:23900 [wandb_run.py:_config_callback():663] config_cb None None {'LOG_DIR': '../logs', 'dataset': 'cub', 'sz_embedding': 512, 'sz_batch': 128, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 0, 'model': 'googlenet', 'loss': 'TripletPCA2', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 20, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 1, 'bn_freeze': 1, 'l2_norm': 1, 'remark': ''}
+2021-03-04 06:59:45,580 INFO    MainThread:23900 [wandb_run.py:_atexit_cleanup():1369] got exitcode: 0
+2021-03-04 06:59:45,580 INFO    MainThread:23900 [wandb_run.py:_restore():1341] restore
+2021-03-04 06:59:45,805 INFO    MainThread:23900 [wandb_run.py:_wait_for_finish():1492] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1263
+  total_bytes: 1263
+}
+
+2021-03-04 06:59:47,814 INFO    MainThread:23900 [wandb_run.py:_wait_for_finish():1492] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 786405
+  total_bytes: 786405
+}
+
+2021-03-04 06:59:49,816 INFO    MainThread:23900 [wandb_run.py:_wait_for_finish():1492] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 786405
+  total_bytes: 786405
+}
+
+2021-03-04 06:59:50,932 INFO    MainThread:23900 [wandb_run.py:_show_summary():1647] rendering summary
+2021-03-04 06:59:50,932 INFO    MainThread:23900 [wandb_run.py:_show_history():1685] rendering history
+2021-03-04 06:59:50,933 INFO    MainThread:23900 [wandb_run.py:_show_files():1714] logging synced files
+2021-03-04 06:59:50,939 INFO    MainThread:23900 [internal.py:handle_exit():156] Internal process exited

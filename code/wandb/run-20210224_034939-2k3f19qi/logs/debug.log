@@ -1,0 +1,33 @@
+2021-02-24 03:49:39,231 INFO    MainThread:14552 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-24 03:49:39,231 INFO    MainThread:14552 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-02-24 03:49:39,231 INFO    MainThread:14552 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-24 03:49:39,232 INFO    MainThread:14552 [wandb_init.py:_log_setup():318] Logging user logs to C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210224_034939-2k3f19qi\logs\debug.log
+2021-02-24 03:49:39,232 INFO    MainThread:14552 [wandb_init.py:_log_setup():319] Logging internal logs to C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210224_034939-2k3f19qi\logs\debug-internal.log
+2021-02-24 03:49:41,080 INFO    MainThread:14552 [wandb_run.py:_console_start():1399] atexit reg
+2021-02-24 03:49:41,081 INFO    MainThread:14552 [wandb_run.py:_redirect():1262] redirect: SettingsConsole.WRAP
+2021-02-24 03:49:41,081 INFO    MainThread:14552 [wandb_run.py:_redirect():1297] Wrapping output streams.
+2021-02-24 03:49:41,081 INFO    MainThread:14552 [wandb_run.py:_redirect():1313] Redirects installed.
+2021-02-24 03:49:41,082 INFO    MainThread:14552 [wandb_run.py:_config_callback():663] config_cb None None {'LOG_DIR': '../logs', 'dataset': 'cars', 'sz_embedding': 512, 'sz_batch': 128, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 0, 'model': 'googlenet', 'loss': 'Triplet', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 20, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 1, 'bn_freeze': 1, 'l2_norm': 1, 'remark': ''}
+2021-02-24 03:50:20,756 INFO    MainThread:14552 [wandb_run.py:_atexit_cleanup():1369] got exitcode: 1
+2021-02-24 03:50:20,757 INFO    MainThread:14552 [wandb_run.py:_restore():1341] restore
+2021-02-24 03:50:21,012 INFO    MainThread:14552 [wandb_run.py:_wait_for_finish():1492] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1274
+  total_bytes: 1274
+}
+
+2021-02-24 03:50:23,015 INFO    MainThread:14552 [wandb_run.py:_wait_for_finish():1492] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 7242
+  total_bytes: 7242
+}
+
+2021-02-24 03:50:24,099 INFO    MainThread:14552 [wandb_run.py:_show_files():1714] logging synced files
+2021-02-24 03:50:24,101 INFO    MainThread:14552 [internal.py:handle_exit():156] Internal process exited

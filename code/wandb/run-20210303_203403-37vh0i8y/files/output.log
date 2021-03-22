@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1438, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 125, in <module>
+    is_inception=(args.model == 'bn_inception')
+  File "C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\dataset\__init__.py", line 15, in load
+    return _type[name](root = root, mode = mode, transform = transform, noise = noise, severity = severity)
+  File "C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\dataset\cub.py", line 16, in __init__
+    os.path.join(self.root, 'images')).imgs:
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\torchvision\datasets\folder.py", line 209, in __init__
+    target_transform=target_transform)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\torchvision\datasets\folder.py", line 83, in __init__
+    classes, class_to_idx = self._find_classes(root)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\torchvision\datasets\folder.py", line 116, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'C:\\Users\\Juhyeon\\Desktop\\repository\\Proxy-Anchor-CVPR2020\\data/CUB_200_2011\\images'
+Backend Qt5Agg is interactive backend. Turning interactive mode on.

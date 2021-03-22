@@ -1,0 +1,9 @@
+Random Sampling
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [08:14<1:14:14, 494.93s/it] 20%|██        | 2/10 [1:10:27<4:41:48, 2113.51s/it] 30%|███       | 3/10 [1:42:05<3:58:11, 2041.71s/it]Traceback (most recent call last):
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 229, in <module>
+    im = corrupt(np.array(im), corruption_name=noise, severity=i)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\__init__.py", line 29, in corrupt
+    x_corrupted = corruption_dict[corruption_name](Image.fromarray(x), severity)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\corruptions.py", line 259, in frost
+    x_start, y_start = np.random.randint(0, frost.shape[0] - 224), np.random.randint(0, frost.shape[1] - 224)
+AttributeError: 'NoneType' object has no attribute 'shape'

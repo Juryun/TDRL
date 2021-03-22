@@ -1,0 +1,54 @@
+2021-02-18 21:01:56,645 INFO    MainThread:15228 [internal.py:wandb_internal():81] W&B internal server running at pid: 15228
+2021-02-18 21:01:56,646 INFO    WriterThread:15228 [datastore.py:open_for_write():77] open: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\run-13p8i8q6.wandb
+2021-02-18 21:01:56,647 DEBUG   HandlerThread:15228 [handler.py:handle_request():93] handle_request: check_version
+2021-02-18 21:01:56,648 DEBUG   SenderThread:15228 [sender.py:send():117] send: header
+2021-02-18 21:01:56,648 DEBUG   SenderThread:15228 [sender.py:send():117] send: request
+2021-02-18 21:01:56,648 DEBUG   SenderThread:15228 [sender.py:send_request():126] send_request: check_version
+2021-02-18 21:01:56,650 DEBUG   Thread-8  :15228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): pypi.org
+2021-02-18 21:01:56,836 DEBUG   Thread-8  :15228 [connectionpool.py:_make_request():396] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 54248
+2021-02-18 21:01:56,887 DEBUG   SenderThread:15228 [sender.py:send():117] send: run
+2021-02-18 21:01:56,898 DEBUG   SenderThread:15228 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, '지정된 파일을 찾을 수 없습니다', None, 2, None)
+2021-02-18 21:01:56,902 DEBUG   SenderThread:15228 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-18 21:01:56,954 DEBUG   SenderThread:15228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-18 21:01:57,168 DEBUG   SenderThread:15228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 21:01:57,202 INFO    SenderThread:15228 [dir_watcher.py:__init__():165] watching files in: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files
+2021-02-18 21:01:57,202 INFO    SenderThread:15228 [sender.py:_start_run_threads():596] run started: 13p8i8q6 with start time 1613649715
+2021-02-18 21:01:57,202 DEBUG   SenderThread:15228 [sender.py:send():117] send: summary
+2021-02-18 21:01:57,202 DEBUG   HandlerThread:15228 [handler.py:handle_request():93] handle_request: run_start
+2021-02-18 21:01:57,206 INFO    SenderThread:15228 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-18 21:01:57,215 DEBUG   HandlerThread:15228 [meta.py:__init__():34] meta init
+2021-02-18 21:01:57,217 DEBUG   HandlerThread:15228 [meta.py:__init__():48] meta init done
+2021-02-18 21:01:57,217 DEBUG   HandlerThread:15228 [meta.py:probe():190] probe
+2021-02-18 21:01:57,224 DEBUG   HandlerThread:15228 [meta.py:_setup_git():180] setup git
+2021-02-18 21:01:57,226 DEBUG   HandlerThread:15228 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-18 21:01:57,277 DEBUG   HandlerThread:15228 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020, universal_newlines=False, shell=None, istream=None)
+2021-02-18 21:01:57,328 DEBUG   HandlerThread:15228 [meta.py:_setup_git():187] setup git done
+2021-02-18 21:01:57,328 DEBUG   HandlerThread:15228 [meta.py:_save_pip():52] save pip
+2021-02-18 21:01:57,329 DEBUG   HandlerThread:15228 [meta.py:_save_pip():66] save pip done
+2021-02-18 21:01:57,329 DEBUG   HandlerThread:15228 [meta.py:probe():231] probe done
+2021-02-18 21:01:57,394 DEBUG   SenderThread:15228 [sender.py:send():117] send: files
+2021-02-18 21:01:57,394 INFO    SenderThread:15228 [sender.py:_save_file():682] saving file wandb-metadata.json with policy now
+2021-02-18 21:01:57,398 DEBUG   HandlerThread:15228 [handler.py:handle_request():93] handle_request: status
+2021-02-18 21:01:57,398 DEBUG   SenderThread:15228 [sender.py:send():117] send: request
+2021-02-18 21:01:57,398 DEBUG   SenderThread:15228 [sender.py:send_request():126] send_request: status
+2021-02-18 21:01:57,400 DEBUG   SenderThread:15228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-18 21:01:57,407 DEBUG   Thread-17 :15228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-18 21:01:57,597 DEBUG   SenderThread:15228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 21:01:57,598 DEBUG   SenderThread:15228 [sender.py:send():117] send: config
+2021-02-18 21:01:57,602 DEBUG   SenderThread:15228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-18 21:01:57,614 DEBUG   Thread-17 :15228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 21:01:57,618 DEBUG   Thread-17 :15228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-02-18 21:01:57,824 DEBUG   SenderThread:15228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-18 21:01:58,143 DEBUG   Thread-17 :15228 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/juryun/cars_ProxyAnchor/13p8i8q6/wandb-metadata.json?Expires=1613736118&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=splzlAIDb46tXziFltg1Q1wYNuh0njv6wbilGiM1QRTxaVcf9Y6NdafztwXnJeSKgGhD7%2BGySJFG%2BvWpb0cPu9VLWWvi6pu2WsrJp0ca4AOKC849o6tmSQ3rmrSvOBL4sM17ENIuT2Xp0ImMOl4MGLaztr3vntQqSRou3ItWQJN7%2B01Ojb1WK7HsjHvqbdcmoWBpg2bzlufzjnL%2FNS5O2lroBtss0XDixfFijygnNun13HrS6cxWQQ3Rmt0LL9M3autTLzKzPsSS0fmbrKp2gKo%2BVLVrwFgNH3cdw3Zp2nFzR2%2F%2BR55zmFMs%2Fj9jDo4hpCSNq%2F0PELj2Lg9vBqpa6g%3D%3D HTTP/1.1" 200 0
+2021-02-18 21:01:58,145 INFO    Thread-17 :15228 [upload_job.py:push():133] Uploaded file C:\Users\Juhyeon\AppData\Local\Temp\tmpyiui2_q2wandb\2paw4tbl-wandb-metadata.json
+2021-02-18 21:01:58,205 INFO    Thread-12 :15228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files\config.yaml
+2021-02-18 21:01:58,205 INFO    Thread-12 :15228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files\wandb-summary.json
+2021-02-18 21:01:58,205 INFO    Thread-12 :15228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files\requirements.txt
+2021-02-18 21:01:58,205 INFO    Thread-12 :15228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files\wandb-metadata.json
+2021-02-18 21:01:58,206 INFO    Thread-12 :15228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files\output.log
+2021-02-18 21:01:59,831 DEBUG   Thread-9  :15228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-18 21:02:00,089 DEBUG   Thread-9  :15228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/13p8i8q6/file_stream HTTP/1.1" 200 None
+2021-02-18 21:02:00,203 INFO    Thread-12 :15228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files\output.log
+2021-02-18 21:02:00,727 DEBUG   SenderThread:15228 [sender.py:send():117] send: stats
+2021-02-18 21:02:02,941 DEBUG   Thread-9  :15228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/13p8i8q6/file_stream HTTP/1.1" 200 None
+2021-02-18 21:02:03,204 INFO    Thread-12 :15228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210218_210155-13p8i8q6\files\output.log

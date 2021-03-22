@@ -1,0 +1,9 @@
+Random Sampling
+  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [1:00:32<14:07:36, 3632.60s/it] 13%|█▎        | 2/15 [2:36:03<16:54:21, 4681.63s/it] 20%|██        | 3/15 [4:05:47<16:23:11, 4915.97s/it]Traceback (most recent call last):
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 222, in <module>
+    im = corrupt(np.array(im), corruption_name=noise, severity=i)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\__init__.py", line 29, in corrupt
+    x_corrupted = corruption_dict[corruption_name](Image.fromarray(x), severity)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\corruptions.py", line 195, in defocus_blur
+    channels.append(cv2.filter2D(x[:, :, d], -1, kernel))
+IndexError: too many indices for array

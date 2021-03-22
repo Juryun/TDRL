@@ -1,0 +1,8 @@
+Random Sampling
+  0%|          | 0/15 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 227, in <module>
+    im.save(thal)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\PIL\Image.py", line 1947, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Juhyeon\\Desktop\\repository\\Proxy-Anchor-CVPR2020\\data/CUB_200_2011/gaussian_noise/s1/images/101.White_Pelican\\White_Pelican_0003_96691.jpg'

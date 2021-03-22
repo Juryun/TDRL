@@ -1,0 +1,11 @@
+Random Sampling
+Training parameters: {'LOG_DIR': '../logs', 'dataset': 'cars', 'sz_embedding': 256, 'sz_batch': 128, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 0, 'model': 'googlenet', 'loss': 'TripletPCA2', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 20, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 1, 'bn_freeze': 1, 'l2_norm': 1, 'remark': ''}
+Training for 60 epochs.
+0it [00:00, ?it/s]Traceback (most recent call last):
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/train.py", line 305, in <module>
+    loss.backward()
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\torch\tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\torch\autograd\__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn

@@ -1,0 +1,412 @@
+2021-02-14 16:11:54,421 INFO    MainThread:4124 [internal.py:wandb_internal():81] W&B internal server running at pid: 4124
+2021-02-14 16:11:54,422 INFO    WriterThread:4124 [datastore.py:open_for_write():77] open: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\run-113i5ndk.wandb
+2021-02-14 16:11:54,423 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: check_version
+2021-02-14 16:11:54,424 DEBUG   SenderThread:4124 [sender.py:send():117] send: header
+2021-02-14 16:11:54,424 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:11:54,426 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: check_version
+2021-02-14 16:11:54,428 DEBUG   Thread-8  :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): pypi.org
+2021-02-14 16:11:54,607 DEBUG   Thread-8  :4124 [connectionpool.py:_make_request():396] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53965
+2021-02-14 16:11:54,651 DEBUG   SenderThread:4124 [sender.py:send():117] send: run
+2021-02-14 16:11:54,662 DEBUG   SenderThread:4124 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, '지정된 파일을 찾을 수 없습니다', None, 2, None)
+2021-02-14 16:11:54,665 DEBUG   SenderThread:4124 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-14 16:11:54,716 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:11:54,951 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:11:54,984 INFO    SenderThread:4124 [dir_watcher.py:__init__():165] watching files in: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files
+2021-02-14 16:11:54,984 INFO    SenderThread:4124 [sender.py:_start_run_threads():596] run started: 113i5ndk with start time 1613286713
+2021-02-14 16:11:54,984 DEBUG   SenderThread:4124 [sender.py:send():117] send: summary
+2021-02-14 16:11:54,984 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: run_start
+2021-02-14 16:11:54,986 INFO    SenderThread:4124 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-14 16:11:54,994 DEBUG   HandlerThread:4124 [meta.py:__init__():34] meta init
+2021-02-14 16:11:54,995 DEBUG   HandlerThread:4124 [meta.py:__init__():48] meta init done
+2021-02-14 16:11:54,995 DEBUG   HandlerThread:4124 [meta.py:probe():190] probe
+2021-02-14 16:11:55,002 DEBUG   HandlerThread:4124 [meta.py:_setup_git():180] setup git
+2021-02-14 16:11:55,004 DEBUG   HandlerThread:4124 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-14 16:11:55,053 DEBUG   HandlerThread:4124 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020, universal_newlines=False, shell=None, istream=None)
+2021-02-14 16:11:55,102 DEBUG   HandlerThread:4124 [meta.py:_setup_git():187] setup git done
+2021-02-14 16:11:55,102 DEBUG   HandlerThread:4124 [meta.py:_save_pip():52] save pip
+2021-02-14 16:11:55,103 DEBUG   HandlerThread:4124 [meta.py:_save_pip():66] save pip done
+2021-02-14 16:11:55,103 DEBUG   HandlerThread:4124 [meta.py:probe():231] probe done
+2021-02-14 16:11:55,150 DEBUG   SenderThread:4124 [sender.py:send():117] send: files
+2021-02-14 16:11:55,150 INFO    SenderThread:4124 [sender.py:_save_file():682] saving file wandb-metadata.json with policy now
+2021-02-14 16:11:55,154 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:11:55,154 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:11:55,154 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:11:55,156 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:11:55,164 DEBUG   Thread-17 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:11:55,345 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:11:55,347 DEBUG   SenderThread:4124 [sender.py:send():117] send: config
+2021-02-14 16:11:55,351 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:11:55,368 DEBUG   Thread-17 :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:11:55,372 DEBUG   Thread-17 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-02-14 16:11:55,575 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:11:55,939 DEBUG   Thread-17 :4124 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/juryun/cars_ProxyAnchor/113i5ndk/wandb-metadata.json?Expires=1613373115&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aWv4oFDX7xb5uxtrZWu%2BefYiqjHYDSyjxLwFIDMT7Fxob869TVH2p%2BqKrY1h0FB27ZDiBenjHzRSRQgqDN5Ck%2BqFnTlJoGWyq88kUWY8%2FU7ASRUmYfc8yxEjncsIlp3TjKszFTP2hANnSF4WJWtx%2BRsK8USdv5wjRXx6B07YM%2BY1KWcOsjqv2XbO49%2B82M1wMtwn%2FzmIWv4l1%2BFb7ywBvbeYHX8eV45NBW2WGxf3SXhCk8JT5FsFK23St1OfR0D8cj9VpHE21hBUOov1nXivCVU21U1WRSrWTsIONN9PDgr3vKIB8VdNNZ%2Blrx%2BuC3gX2dVjUEKmJEIlDlMjMzi9tg%3D%3D HTTP/1.1" 200 0
+2021-02-14 16:11:55,940 INFO    Thread-17 :4124 [upload_job.py:push():133] Uploaded file C:\Users\Juhyeon\AppData\Local\Temp\tmp9zi5z1tywandb\20igdwmn-wandb-metadata.json
+2021-02-14 16:11:55,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\config.yaml
+2021-02-14 16:11:55,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\wandb-metadata.json
+2021-02-14 16:11:55,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\wandb-summary.json
+2021-02-14 16:11:55,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:11:55,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\requirements.txt
+2021-02-14 16:11:57,436 DEBUG   Thread-9  :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:11:57,687 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:11:57,984 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:11:58,503 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:00,702 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:00,985 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:01,985 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:02,985 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:03,114 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:03,317 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:04,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:05,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:06,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:07,727 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:07,933 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:07,986 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:09,988 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:10,347 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:12:10,347 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:12:10,347 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:12:10,349 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:12:10,536 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:12:10,987 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:11,987 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:12,346 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:12,557 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:12,988 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:14,988 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:15,988 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:16,961 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:16,988 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:17,164 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:17,989 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:19,989 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:20,989 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:21,579 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:21,788 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:21,990 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:23,990 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:24,990 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:25,538 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:12:25,538 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:12:25,538 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:12:25,540 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:12:25,736 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:12:25,990 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:26,190 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:26,422 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:27,991 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:28,991 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:29,991 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:30,809 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:31,018 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:31,992 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:32,992 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:34,992 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:35,434 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:35,638 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:35,993 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:36,993 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:38,993 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:40,000 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:40,045 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:40,253 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:40,739 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:12:40,739 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:12:40,739 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:12:40,741 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:12:40,940 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:12:41,999 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:42,999 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:44,000 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:44,658 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:44,856 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:46,000 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:47,000 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:49,001 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:49,269 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:49,473 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:12:50,001 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:52,001 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:53,002 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:53,879 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:12:55,002 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:55,942 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:12:55,942 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:12:55,942 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:12:55,944 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:12:56,002 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:56,141 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:12:58,003 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:12:58,485 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:00,003 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:01,003 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:02,004 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:03,108 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:03,354 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:13:04,004 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:05,004 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:06,004 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:07,715 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:08,008 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:09,008 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:10,011 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:11,012 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:11,144 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:13:11,144 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:13:11,145 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:13:11,146 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:13:11,347 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:13:12,012 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:12,335 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:14,012 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:15,012 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:16,013 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:16,946 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:17,013 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:17,153 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:13:19,013 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:20,014 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:21,014 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:21,564 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:23,014 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:24,015 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:26,015 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:26,175 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:26,350 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:13:26,350 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:13:26,350 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:13:26,352 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:13:26,545 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:13:27,015 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:29,016 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:30,787 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:30,987 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:13:31,016 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:33,017 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:35,401 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:36,017 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:37,017 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:38,018 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:39,018 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:40,017 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:40,018 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:41,018 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:41,546 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:13:41,546 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:13:41,546 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:13:41,548 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:13:41,744 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:13:42,019 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:43,019 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:44,019 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:44,629 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:44,833 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:13:45,019 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:46,019 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:47,020 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:49,020 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:49,248 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:50,020 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:52,022 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:53,021 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:53,859 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:54,021 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:55,021 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:56,747 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:13:56,747 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:13:56,747 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:13:56,749 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:13:56,945 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:13:57,022 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:58,022 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:13:58,480 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:13:58,683 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:13:59,023 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:02,023 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:03,095 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:04,024 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:07,024 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:07,700 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:10,025 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:11,025 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:11,947 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:14:11,947 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:14:11,947 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:14:11,949 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:14:12,144 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:14:12,312 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:12,524 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:14:13,026 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:14,026 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:16,026 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:16,924 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:17,027 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:18,027 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:19,027 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:20,027 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:21,534 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:22,028 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:25,028 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:26,149 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:26,353 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:14:27,029 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:27,147 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:14:27,147 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:14:27,147 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:14:27,149 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:14:27,347 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:14:30,029 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:30,756 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:32,030 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:35,036 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:35,366 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:37,036 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:39,037 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:39,973 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:40,037 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:40,172 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:14:41,037 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:42,349 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:14:42,349 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:14:42,349 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:14:42,351 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:14:42,549 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:14:43,037 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:44,038 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:44,583 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:46,038 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:48,039 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:49,204 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:50,039 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:51,039 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:53,040 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:53,816 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:54,040 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:54,047 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:14:56,040 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:57,558 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: status
+2021-02-14 16:14:57,558 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:14:57,558 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: status
+2021-02-14 16:14:57,560 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:14:57,754 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:14:58,041 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:14:58,416 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:14:59,041 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:15:01,041 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:15:02,042 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:15:02,512 DEBUG   SenderThread:4124 [sender.py:send():117] send: history
+2021-02-14 16:15:02,512 DEBUG   SenderThread:4124 [sender.py:send():117] send: summary
+2021-02-14 16:15:02,513 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: poll_exit
+2021-02-14 16:15:02,513 INFO    SenderThread:4124 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-14 16:15:02,513 DEBUG   SenderThread:4124 [sender.py:send():117] send: telemetry
+2021-02-14 16:15:02,518 DEBUG   SenderThread:4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:15:02,736 DEBUG   SenderThread:4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:15:02,743 DEBUG   SenderThread:4124 [sender.py:send():117] send: exit
+2021-02-14 16:15:02,743 INFO    SenderThread:4124 [sender.py:send_exit():195] handling exit code: 1
+2021-02-14 16:15:02,743 INFO    SenderThread:4124 [sender.py:send_exit():203] send defer
+2021-02-14 16:15:02,743 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:02,743 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: poll_exit
+2021-02-14 16:15:02,744 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:02,744 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 0
+2021-02-14 16:15:02,744 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:02,744 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:02,744 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 0
+2021-02-14 16:15:02,744 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 1
+2021-02-14 16:15:02,744 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:02,744 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 1
+2021-02-14 16:15:02,785 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:02,786 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:02,786 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 1
+2021-02-14 16:15:02,786 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 2
+2021-02-14 16:15:02,786 DEBUG   SenderThread:4124 [sender.py:send():117] send: stats
+2021-02-14 16:15:02,786 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:02,786 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 2
+2021-02-14 16:15:02,786 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:02,786 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:02,787 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 2
+2021-02-14 16:15:02,787 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 3
+2021-02-14 16:15:02,787 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:02,787 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 3
+2021-02-14 16:15:02,787 DEBUG   SenderThread:4124 [sender.py:send():117] send: summary
+2021-02-14 16:15:02,788 INFO    SenderThread:4124 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-14 16:15:02,788 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:02,788 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:02,788 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 3
+2021-02-14 16:15:02,788 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 4
+2021-02-14 16:15:02,789 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:02,789 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 4
+2021-02-14 16:15:02,789 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:02,789 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:02,789 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 4
+2021-02-14 16:15:02,789 INFO    SenderThread:4124 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-02-14 16:15:03,042 INFO    Thread-12 :4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\config.yaml
+2021-02-14 16:15:03,043 INFO    SenderThread:4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\wandb-summary.json
+2021-02-14 16:15:03,043 INFO    SenderThread:4124 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:15:03,043 INFO    SenderThread:4124 [dir_watcher.py:finish():309] scan: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files
+2021-02-14 16:15:03,044 INFO    SenderThread:4124 [dir_watcher.py:finish():315] scan save: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\config.yaml config.yaml
+2021-02-14 16:15:03,044 INFO    SenderThread:4124 [dir_watcher.py:finish():315] scan save: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log output.log
+2021-02-14 16:15:03,044 INFO    SenderThread:4124 [dir_watcher.py:finish():315] scan save: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\requirements.txt requirements.txt
+2021-02-14 16:15:03,048 DEBUG   Thread-18 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:15:03,048 INFO    SenderThread:4124 [dir_watcher.py:finish():315] scan save: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\wandb-metadata.json wandb-metadata.json
+2021-02-14 16:15:03,049 INFO    SenderThread:4124 [dir_watcher.py:finish():315] scan save: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\wandb-summary.json wandb-summary.json
+2021-02-14 16:15:03,049 DEBUG   Thread-19 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:15:03,051 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 5
+2021-02-14 16:15:03,052 DEBUG   Thread-20 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:15:03,052 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:03,052 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 5
+2021-02-14 16:15:03,054 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:03,054 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:03,054 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 5
+2021-02-14 16:15:03,054 INFO    SenderThread:4124 [file_pusher.py:finish():176] shutting down file pusher
+2021-02-14 16:15:03,054 DEBUG   Thread-21 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-02-14 16:15:03,054 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 6
+2021-02-14 16:15:03,055 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:03,055 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 6
+2021-02-14 16:15:03,055 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:03,055 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:03,055 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 6
+2021-02-14 16:15:03,256 DEBUG   Thread-20 :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:15:03,260 DEBUG   Thread-20 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-02-14 16:15:03,261 DEBUG   Thread-18 :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:15:03,262 DEBUG   Thread-19 :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:15:03,263 DEBUG   Thread-21 :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-14 16:15:03,263 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:15:03,266 DEBUG   Thread-18 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-02-14 16:15:03,269 DEBUG   Thread-19 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-02-14 16:15:03,271 DEBUG   Thread-21 :4124 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-02-14 16:15:03,444 DEBUG   Thread-9  :4124 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/juryun/cars_ProxyAnchor/113i5ndk/file_stream HTTP/1.1" 200 None
+2021-02-14 16:15:03,445 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 7
+2021-02-14 16:15:03,445 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:03,445 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 7
+2021-02-14 16:15:03,446 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:03,446 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:03,446 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 7
+2021-02-14 16:15:03,446 INFO    SenderThread:4124 [sender.py:send_request_defer():248] send defer: 8
+2021-02-14 16:15:03,446 DEBUG   SenderThread:4124 [sender.py:send():117] send: final
+2021-02-14 16:15:03,446 DEBUG   SenderThread:4124 [sender.py:send():117] send: footer
+2021-02-14 16:15:03,446 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: defer
+2021-02-14 16:15:03,446 INFO    HandlerThread:4124 [handler.py:handle_request_defer():107] handle defer: 8
+2021-02-14 16:15:03,446 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:03,446 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: defer
+2021-02-14 16:15:03,446 INFO    SenderThread:4124 [sender.py:send_request_defer():212] handle sender defer: 8
+2021-02-14 16:15:03,682 DEBUG   Thread-20 :4124 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/juryun/cars_ProxyAnchor/113i5ndk/requirements.txt?Expires=1613373303&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=deQ1IedJUmQCzoQ4r555TZhODrSb7Ktrz5l9UDy1D%2BtEgIVm5PgbjzrEP6mSGPoG9QhXkXB3l76RiU6vRBDDBUclxq5OhGX3VTYVsF2iBbleSZCLiCNjaHWuGMJemL8GrnKemSVJnEZAQtQBtyWBOw%2BODVJp4gF0bB1qYFqH9M2IFjbBvc%2FD5OJirDd0gwlVnQ2JvCOWHXObHBhMbdWzMza%2B1mXJ2Oz16CcmnrHJr6tdyQHjbhZUgldthMTAeT%2BdBt0J78bH0wzdZCyOHDPslaDjgH7wY13PYi4kcPlgb%2F8VdqeTQ7%2BBaM0Ux4KQAZYVz6%2BXqV%2B5TK0P%2FVBXEVl2Ug%3D%3D HTTP/1.1" 200 0
+2021-02-14 16:15:03,684 INFO    Thread-20 :4124 [upload_job.py:push():133] Uploaded file C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\requirements.txt
+2021-02-14 16:15:03,765 DEBUG   Thread-21 :4124 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/juryun/cars_ProxyAnchor/113i5ndk/wandb-summary.json?Expires=1613373303&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=T5mgVuSDBokZ3HK4azrXmxouoz7ewjiexeJz9aogfSPlmXDHUs0kq%2BRBHBI1631jVUswIh%2FyUv0jB75FDVH2Oa75ho4sdJrxL2al2jccBUODB04PdT1Zn9eNkXpBSc1VMbifnEjh5WboZWtGAnVKBfotJY48wWKxYCZWj4Yv1kCgGNSWSvmR%2FLt6zDAO6eUtnrifXUODA4XW3xNkx45qEPDa%2BCyMyfKd4hejU56dOYjL%2FBgCG%2BKyGX82aiNutsMr1eFnppi8e5zD%2FOOQ3Ke4BojvRdl2rEzENLugLiUb3lRNQO5szZmwSmqtPD0Ld7D4vdbQyRemFg5Qfv7chdQxYQ%3D%3D HTTP/1.1" 200 0
+2021-02-14 16:15:03,766 INFO    Thread-21 :4124 [upload_job.py:push():133] Uploaded file C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\wandb-summary.json
+2021-02-14 16:15:03,839 DEBUG   Thread-18 :4124 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/juryun/cars_ProxyAnchor/113i5ndk/config.yaml?Expires=1613373303&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=FNS03vstvXbzuvRZgdBSU1ScKRUTYCPWTMmhMk2ha0OToBUCH2sp%2B0WECA27k5ccPxNGHbPnDl2mh6WpXx9ZBEO1S%2F1baA5eHdNVMpMtvUSsbZVywkc8avvZx%2F%2Fzimhh45ZVI8MuanSJYpS3xnrD6iPTLe6BgwT74SbMB2eCPRcG9rNH58xFVCsZSiz79Yd6Q4nkcS%2FzxtQauVEcfb3IsrNct7wUbJ4VjbvAgsugadwUfjhLdW85AWSWh02Mp47xpUuvWCLbxCWR2xSlQflZw%2F8ZMl8J8mJ3xbvnE47WhbySPTQ46wZR4u%2FZrJA878okRvA60VC%2BNcFPvtYrCA21Ag%3D%3D HTTP/1.1" 200 0
+2021-02-14 16:15:03,840 INFO    Thread-18 :4124 [upload_job.py:push():133] Uploaded file C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\config.yaml
+2021-02-14 16:15:03,846 DEBUG   Thread-19 :4124 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/juryun/cars_ProxyAnchor/113i5ndk/output.log?Expires=1613373303&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=CANJbC5REnrAU0Dsk293hVZnVNSmcw0J%2FSRlo602hVzYp2PWXPz4S98iy62dbGD5AdWatHQZocg9iFSzayOvTyiLkmgSNNyokjQoWC0tg3ft3luwiAl%2B1GlFxXOBb%2FnLzTL0dciDLR3PC6BO3zu0AItsBEx%2Bn8jnP0BE7FsFoyNR3HnhvNVo0H6X6zBY%2FUgRlBb6%2FzKq6po978vaxtu8vQ9m6cOAzreQdLEqKg4BHa5NGMbiWDpZNIT0d2dFE5X2PPAntIThJgIyQiw%2BJmgAIjxKLcjgsQ6KQHJz7bFZ3P3K50abP3Q%2BKoX5IDyxG2ZNNrnhakCgqoDLrrc%2Fon%2BBsg%3D%3D HTTP/1.1" 200 0
+2021-02-14 16:15:03,847 INFO    Thread-19 :4124 [upload_job.py:push():133] Uploaded file C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\files\output.log
+2021-02-14 16:15:04,744 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: poll_exit
+2021-02-14 16:15:04,744 DEBUG   SenderThread:4124 [sender.py:send():117] send: request
+2021-02-14 16:15:04,744 DEBUG   SenderThread:4124 [sender.py:send_request():126] send_request: poll_exit
+2021-02-14 16:15:04,744 INFO    SenderThread:4124 [file_pusher.py:join():181] waiting for file pusher
+2021-02-14 16:15:04,745 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: get_summary
+2021-02-14 16:15:04,746 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: sampled_history
+2021-02-14 16:15:04,746 DEBUG   HandlerThread:4124 [handler.py:handle_request():93] handle_request: shutdown
+2021-02-14 16:15:04,746 INFO    HandlerThread:4124 [handler.py:finish():312] shutting down handler
+2021-02-14 16:15:05,446 INFO    WriterThread:4124 [datastore.py:close():258] close: C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\wandb\run-20210214_161153-113i5ndk\run-113i5ndk.wandb
+2021-02-14 16:15:05,745 INFO    SenderThread:4124 [sender.py:finish():766] shutting down sender
+2021-02-14 16:15:05,745 INFO    SenderThread:4124 [file_pusher.py:finish():176] shutting down file pusher
+2021-02-14 16:15:05,745 INFO    SenderThread:4124 [file_pusher.py:join():181] waiting for file pusher
+2021-02-14 16:15:05,746 INFO    MainThread:4124 [internal.py:handle_exit():156] Internal process exited

@@ -1,0 +1,10 @@
+Random Sampling
+Backend Qt5Agg is interactive backend. Turning interactive mode on.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1438, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 218, in <module>
+    str = ev_dataset.root + "/" + noise + "/s" + str(severity)+ "/" + ev_dataset.im_paths[index][-10:]
+TypeError: 'str' object is not callable

@@ -1,0 +1,17 @@
+Random Sampling
+Traceback (most recent call last):
+  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/train.py", line 234, in <module>
+    criterion = losses.NPairLoss().cuda()
+  File "C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\losses.py", line 194, in __init__
+    self.loss_func = losses.NPairsLoss(normalize_embeddings = False)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\pytorch_metric_learning\losses\n_pairs_loss.py", line 10, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\pytorch_metric_learning\losses\mixins.py", line 50, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\pytorch_metric_learning\utils\module_with_records_and_reducer.py", line 55, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\pytorch_metric_learning\utils\module_with_records_and_reducer.py", line 10, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\pytorch_metric_learning\utils\module_with_records_and_reducer.py", line 41, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'normalize_embeddings'
