@@ -1,19 +1,0 @@
-Random Sampling
-Training parameters: {'LOG_DIR': '../logs', 'dataset': 'cars', 'sz_embedding': 512, 'sz_batch': 128, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 0, 'model': 'googlenet', 'loss': 'ContrastivePCA', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 20, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 1, 'bn_freeze': 1, 'l2_norm': 1, 'remark': ''}
-Training for 60 epochs.
-0it [00:00, ?it/s]Train Epoch: 0 [1/62 (0%)] Loss: 0.677308: : 0it [00:03, ?it/s]Train Epoch: 0 [1/62 (0%)] Loss: 0.677308: : 1it [00:03,  3.30s/it]Traceback (most recent call last):
-  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/train.py", line 302, in <module>
-    loss = criterion(m, y.squeeze().cuda())
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\losses.py", line 213, in forward
-    loss = self.loss_func(embeddings, labels)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\pytorch_metric_learning\losses\base_metric_loss_function.py", line 34, in forward
-    loss_dict = self.compute_loss(embeddings, labels, indices_tuple)
-  File "C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\generic_pair_loss_pca.py", line 39, in compute_loss
-    PCA = self.PCA_scale(embeddings, k=128)
-  File "C:\Users\Juhyeon\Desktop\repository\Proxy-Anchor-CVPR2020\code\generic_pair_loss_pca.py", line 23, in PCA_scale
-    eigenvalues, eigenvectors = torch.eig(scaled_covariance, True)
-RuntimeError: MAGMA geev : Argument 4 : illegal value at C:/cb/pytorch_1000000000000/work/aten/src\THC/generic/THCTensorMathMagma.cu:167

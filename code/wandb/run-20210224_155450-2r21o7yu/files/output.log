@@ -1,9 +1,0 @@
-Random Sampling
-  0%|          | 0/6 [00:00<?, ?it/s]Traceback (most recent call last):
-  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 228, in <module>
-    im = corrupt(np.array(im), corruption_name=noise, severity=i)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\__init__.py", line 29, in corrupt
-    x_corrupted = corruption_dict[corruption_name](Image.fromarray(x), severity)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\corruptions.py", line 240, in fog
-    x += c[0] * plasma_fractal(wibbledecay=c[1])[:224, :224][..., np.newaxis]
-ValueError: non-broadcastable output operand with shape (224,224) doesn't match the broadcast shape (224,224,224)

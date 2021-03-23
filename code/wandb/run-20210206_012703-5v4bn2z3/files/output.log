@@ -1,9 +1,0 @@
-Random Sampling
-  0%|          | 0/11 [00:00<?, ?it/s]Traceback (most recent call last):
-  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 222, in <module>
-    im = corrupt(np.array(im), corruption_name=noise, severity=i)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\__init__.py", line 29, in corrupt
-    x_corrupted = corruption_dict[corruption_name](Image.fromarray(x), severity)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\corruptions.py", line 182, in glass_blur
-    x[h, w], x[h_prime, w_prime] = x[h_prime, w_prime], x[h, w]
-IndexError: index 222 is out of bounds for axis 0 with size 183

@@ -1,4 +1,0 @@
-Random Sampling
-Training parameters: {'LOG_DIR': '../logs', 'dataset': 'cars', 'sz_embedding': 512, 'sz_batch': 128, 'nb_epochs': 100, 'gpu_id': 0, 'nb_workers': 0, 'model': 'bn_inception', 'loss': 'ContrastivePCA', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 20, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 1, 'bn_freeze': 1, 'l2_norm': 1, 'remark': ''}
-Training for 100 epochs.
-0it [00:00, ?it/s]

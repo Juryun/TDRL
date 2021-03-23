@@ -1,14 +1,12 @@
 from .cars import Cars
 from .cub import CUBirds
-from .SOP import SOP
 from .import utils
 from .base import BaseDataset
 
 
 _type = {
     'cars': Cars,
-    'cub': CUBirds,
-    'SOP': SOP
+    'cub': CUBirds
 }
 
 def load(name, root, mode, transform = None, noise = None, severity = None):

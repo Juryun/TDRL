@@ -6,15 +6,6 @@ from pytorch_metric_learning.losses.base_metric_loss_function import BaseMetricL
 
 
 class TripletPCAMarginLoss(BaseMetricLossFunction):
-    """
-    Args:
-        margin: The desired difference between the anchor-positive distance and the
-                anchor-negative distance.
-        swap: Use the positive-negative distance instead of anchor-negative distance,
-              if it violates the margin more.
-        smooth_loss: Use the log-exp version of the triplet loss
-    """
-
     def __init__(
         self,
         margin=0.05,
@@ -41,18 +32,22 @@ class TripletPCAMarginLoss(BaseMetricLossFunction):
         scaled_covariance = torch.mm(torch.diag(scaling).view(p, p), covariance)
         eigenvalues, eigenvectors = torch.symeig(scaled_covariance, True)
         total = eigenvalues.sum()
-        eigsum = 0
-        index = 0
-        for i in range(512):
-            eigsum = eigsum + eigenvalues[511-i]
-            if eigsum >= total*k:
-                index = 511-i
-                break;
-        components = (eigenvectors[:, index:])
+        if k>=1:
+            index = 511-k
+            components = (eigenvectors[:, index:])
+        else :
+            eigsum = 0
+            index = 0
+            for i in range(512):
+                eigsum = eigsum + eigenvalues[511-i]
+                if eigsum >= total*k:
+                 index = 511-i
+                 break;
+            components = (eigenvectors[:, index:])
         return components
 
     def compute_loss(self, embeddings, labels, indices_tuple):
-        pca = self.PCA_scale(embeddings, k=0.75)
+        pca = self.PCA_scale(embeddings, k=0.8)
         embeddings = torch.mm(embeddings, pca.float())
         indices_tuple = lmu.convert_to_triplets(
             indices_tuple, labels, t_per_anchor=self.triplets_per_anchor

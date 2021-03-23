@@ -7,13 +7,6 @@ import random
 
 __all__ = ['BNInception', 'bn_inception']
 
-"""
-Inception v2 was ported from Caffee to pytorch 0.2, see 
-https://github.com/Cadene/pretrained-models.pytorch. I've ported it to 
-PyTorch 0.4 for the Proxy-NCA implementation, see 
-https://github.com/dichotomies/proxy-nca.
-"""
-
 class bn_inception(nn.Module):
     def __init__(self, embedding_size, pretrained = True, is_norm=True, bn_freeze = True):
         super(bn_inception, self).__init__()

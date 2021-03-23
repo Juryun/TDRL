@@ -1,15 +1,0 @@
-Random Sampling
-  0%|          | 0/11 [00:00<?, ?it/s]  9%|▉         | 1/11 [1:36:40<16:06:42, 5800.28s/it] 18%|█▊        | 2/11 [2:44:35<12:20:39, 4937.71s/it]Traceback (most recent call last):
-  File "C:/Users/Juhyeon/Desktop/repository/Proxy-Anchor-CVPR2020/code/makeCdataset.py", line 226, in <module>
-    im = corrupt(np.array(im), corruption_name=noise, severity=i)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\__init__.py", line 29, in corrupt
-    x_corrupted = corruption_dict[corruption_name](Image.fromarray(x), severity)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\corruptions.py", line 229, in zoom_blur
-    out += clipped_zoom(x, zoom_factor)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\imagenet_c\corruptions.py", line 110, in clipped_zoom
-    img = scizoom(img[top:top + ch, top:top + ch], (zoom_factor, zoom_factor, 1), order=1)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\scipy\ndimage\interpolation.py", line 642, in zoom
-    zoom = _ni_support._normalize_sequence(zoom, input.ndim)
-  File "C:\Users\Juhyeon\anaconda3\envs\torch17\lib\site-packages\scipy\ndimage\_ni_support.py", line 62, in _normalize_sequence
-    raise RuntimeError(err)
-RuntimeError: sequence argument must have length equal to input rank
