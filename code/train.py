@@ -2,7 +2,7 @@ import torch, math, time, argparse, os
 # from .dataset import *
 import random, dataset, utils, losses, net
 import numpy as np
-
+from torch import nn
 from net.googlenet import *
 from net.bn_inception import *
 from dataset import sampler
@@ -32,7 +32,7 @@ parser.add_argument('--embedding-size', default = 512, type = int,
     dest = 'sz_embedding',
     help = 'Size of embedding that is appended to backbone model.'
 )
-parser.add_argument('--batch-size', default = 150, type = int,
+parser.add_argument('--batch-size', default = 128, type = int,
     dest = 'sz_batch',
     help = 'Number of samples per batch.'
 )
@@ -62,7 +62,7 @@ parser.add_argument('--lr', default = 1e-4, type =float,
 parser.add_argument('--weight-decay', default = 1e-4, type =float,
     help = 'Weight decay setting'
 )
-parser.add_argument('--lr-decay-step', default = 10, type =int,
+parser.add_argument('--lr-decay-step', default = 20, type =int,
     help = 'Learning decay step setting'
 )
 parser.add_argument('--lr-decay-gamma', default = 0.5, type =float,

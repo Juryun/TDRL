@@ -7,7 +7,7 @@ from net.bn_inception import *
 from dataset import sampler
 from torch.utils.data.sampler import BatchSampler
 from tqdm import *
-
+from torch import nn
 
 seed = 1
 random.seed(seed)
@@ -26,7 +26,7 @@ parser.add_argument('--embedding-size', default = 512, type = int,
     dest = 'sz_embedding',
     help = 'Size of embedding that is appended to backbone model.'
 )
-parser.add_argument('--batch-size', default = 150, type = int,
+parser.add_argument('--batch-size', default = 128, type = int,
     dest = 'sz_batch',
     help = 'Number of samples per batch.'
 )
