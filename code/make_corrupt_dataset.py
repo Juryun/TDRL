@@ -6,6 +6,9 @@ from imagenet_c import corrupt
 from tqdm import *
 import PIL
 
+parser = argparse.ArgumentParser(description=
+    'code iccv 2021 id#7348'
+)
 parser.add_argument('--dataset',
                     default='cub',
                     help='Training dataset, e.g. cub, cars'
@@ -28,24 +31,23 @@ if args.gpu_id != -1:
 
 os.chdir('../data/')
 data_root = os.getcwd()
+
 # Dataset Loader and Sampler
+trn_dataset = dataset.load(
+    name=args.dataset,
+    root=data_root,
+    mode='train',
+    transform=dataset.utils.make_transform(
+        is_train=False
+    ))
 
 ev_dataset = dataset.load(
     name=args.dataset,
     root=data_root,
     mode='eval',
     transform=dataset.utils.make_transform(
-        is_train=False,
-        is_inception=(args.model == 'bn_inception')
+        is_train=False
     ))
-
-dl_ev = torch.utils.data.DataLoader(
-    ev_dataset,
-    batch_size=args.sz_batch,
-    shuffle=False,
-    num_workers=args.nb_workers,
-    pin_memory=True
-)
 
 CORRUPTIONS = [
     'gaussian_noise', 'shot_noise', 'impulse_noise', 'defocus_blur',
@@ -63,7 +65,40 @@ for noise in tqdm(CORRUPTIONS) :
             im = corrupt(np.array(im), corruption_name=noise, severity=i)
             im = PIL.Image.fromarray(im)
             if args.dataset == 'cub':
+                if not os.path.exists(ev_dataset.root + "/" + noise):
+                    os.mkdir(ev_dataset.root + "/" + noise )
+                if not os.path.exists(ev_dataset.root + "/" + noise + "/s" + str(i)):
+                    os.mkdir(ev_dataset.root + "/" + noise + "/s" + str(i))
+                if not os.path.exists(ev_dataset.root + "/" + noise + "/s" + str(i) + "/images/"):
+                    os.mkdir(ev_dataset.root + "/" + noise + "/s" + str(i) + "/images/")
+                class_name = ev_dataset.im_paths[index][83:]
+                count = 0
+                for j in range(len(class_name)):
+                    if class_name[j] == "\\" :
+                        count = j
+                        break
+                if not os.path.exists(ev_dataset.root + "/" + noise + "/s" + str(i) + "/images/" + class_name[:count]):
+                    os.mkdir(ev_dataset.root + "/" + noise + "/s" + str(i) + "/images/" + class_name[:count] + "/")
+
                 img_root = ev_dataset.root + "/" + noise + "/s" + str(i) + "/images/" + ev_dataset.im_paths[index][83:]
             elif args.dataset == 'cars':
+                if not os.path.exists(ev_dataset.root + "/" + noise):
+                    os.mkdir(ev_dataset.root + "/" + noise )
+                if not os.path.exists(ev_dataset.root + "/" + noise + "/s" + str(i)):
+                    os.mkdir(ev_dataset.root + "/" + noise + "/s" + str(i))
+                if not os.path.exists(ev_dataset.root + "/" + noise + "/s" + str(i) + "/car_ims/"):
+                    os.mkdir(ev_dataset.root + "/" + noise + "/s" + str(i) + "/car_ims/")
                 img_root = ev_dataset.root + "/" + noise + "/s" + str(i) + "/car_ims/" + ev_dataset.im_paths[index][-10:]
             im.save(img_root)
+
+            for index in range(len(trn_dataset)):
+                if args.dataset == 'cub':
+                    class_name = trn_dataset.im_paths[index][83:]
+                    count = 0
+                    for j in range(len(class_name)):
+                        if class_name[j] == "\\":
+                            count = j
+                            break
+                    if not os.path.exists(
+                            trn_dataset.root + "/" + noise + "/s" + str(i) + "/images/" + class_name[:count]):
+                        os.mkdir(ev_dataset.root + "/" + noise + "/s" + str(i) + "/images/" + class_name[:count] + "/")
