@@ -20,8 +20,8 @@ This repository provides source code of experiments on four datasets (CUB-200-20
 - NumPy
 - tqdm
 - wandb
-- [Pytorch-Metric-Learning](https://github.com/KevinMusgrave/pytorch-metric-learning)
-
+- Pytorch-Metric-Learning
+- imagenet_c
 
 
 ## Datasets
