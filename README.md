@@ -1,6 +1,5 @@
 
 # Triplet Dimensionality Reduction Loss For Metric Learning From Corrupted Images
-iccv2021 Paper ID#7348
 
 ## Requirements
 
