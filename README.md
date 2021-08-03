@@ -1,6 +1,6 @@
 
 # Triplet Dimensionality Reduction Loss For Metric Learning From Corrupted Images
-
+repository for KCCV2021 Demo
 ## Requirements
 
 - Python3
